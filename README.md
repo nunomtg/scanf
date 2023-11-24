@@ -25,3 +25,4 @@ input_string = "move 2 from 4 to 1"
 result = scanf(pattern, input_string)
 
 print(result)  # Output: (2, 4, 1)
+print(all(isinstance(item, int) for item in tuple)) # True
