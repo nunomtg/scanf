@@ -12,7 +12,7 @@ If you need more identifiers is really easy to add since under the hood it's jus
 
 ## Usage
 
-To use the `scanf` function, import it from the module and call it with a pattern and an input string. The function will parse the input based on the pattern and return a tuple of values with the type you specified.
+To use the `scanf` function, import it from the module and call it with a pattern and an input string. The function will parse the input based on the pattern and **returns a tuple of values, each cast to its corresponding type**.
 
 ### Example
 I created this function because it mainly comes in handy in Advent of Code problems. Taking for example [Day 5 - AoC 2022](https://adventofcode.com/2022/day/5) parsing the input is just:
