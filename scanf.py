@@ -65,10 +65,9 @@ def scanf(pattern: str, input: str) -> Tuple[Any, ...]:
     match = pattern.match(input)
 
     if match is None:
-        raise ValueError("scanf: no match")
+        raise ValueError(f"scanf: no match for pattern '{pattern.pattern}' in input '{input}'")
 
     return tuple(f(s) for f, s in zip(order, match.groups()))
-
 
 if __name__ == "__main__":
     pass
