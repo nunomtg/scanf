@@ -19,7 +19,7 @@ def compile_pattern(pattern: str) -> re.Pattern:
     scanf_to_regex = {
         "%d": "([-+]?\d+)",  # integer
         "%f": "([-+]?(\d+(\.\d*)?|\.\d+)([eE][-+]?\d+)?)",  # float
-        "%s": "(\S+)",  # string
+        "%s": "(.+)"  # string (allows spaces inside!)
         # add more if needed
     }
 
