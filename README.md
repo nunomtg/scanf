@@ -5,7 +5,7 @@
 |----------------------|-------------------------------------------|
 | `%d`                 | Integer. Matches an optionally signed decimal integer. |
 | `%f`                 | Floating-point number. Matches an optionally signed floating-point number, possibly in exponential notation. |
-| `%s`                 | String. Matches a sequence of non-whitespace characters. |
+| `%s`                 | String. Matches a string with or without whitespaces. Also works for characters. |
 
 If you need more identifiers it's really easy to add since under the hood it's just plain regex.
 
@@ -25,4 +25,4 @@ input_string = "move 2 from 4 to 1"
 result = scanf(pattern, input_string)
 
 print(result)  # Output: (2, 4, 1)
-print(all(isinstance(item, int) for item in tuple)) # True
+print(all(isinstance(item, int) for item in result)) # True
