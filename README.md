@@ -7,7 +7,7 @@
 | `%f`                 | Floating-point number. Matches an optionally signed floating-point number, possibly in exponential notation. |
 | `%s`                 | String. Matches a string with or without whitespaces. Also works for characters. |
 
-If you need more identifiers is really easy to add since under the hood it's just plain regex.
+If you need more identifiers it's really easy to add since under the hood it's just plain regex.
 
 
 ## Usage
